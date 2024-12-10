@@ -7,8 +7,7 @@ class PhoneNumberUtil {
   /// [isValidNumber] checks if a [phoneNumber] is valid.
   /// Accepts [phoneNumber] and [isoCode]
   /// Returns [Future<bool>].
-  static Future<bool?> isValidNumber(
-      {required String phoneNumber, required String isoCode}) async {
+  static Future<bool?> isValidNumber({required String phoneNumber, required String isoCode}) async {
     if (phoneNumber.length < 2) {
       return false;
     }
@@ -142,7 +141,7 @@ extension phonenumbertypeproperties on PhoneNumberType {
         return 2;
       case PhoneNumberType.TOLL_FREE:
         return 3;
-      case PhoneNumberType.PREMIUM_RATE:
+      case PhoneNumberType.PREMIUM_RATE || PhoneNumberType.PREMIUM_RATE:
         return 4;
       case PhoneNumberType.SHARED_COST:
         return 5;
