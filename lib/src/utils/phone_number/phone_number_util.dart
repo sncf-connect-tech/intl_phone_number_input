@@ -141,7 +141,7 @@ extension phonenumbertypeproperties on PhoneNumberType {
         return 2;
       case PhoneNumberType.TOLL_FREE:
         return 3;
-      case PhoneNumberType.PREMIUM_RATE || PhoneNumberType.PREMIUM_RATE:
+      case PhoneNumberType.PREMIUM_RATE:
         return 4;
       case PhoneNumberType.SHARED_COST:
         return 5;
