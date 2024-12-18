@@ -25,6 +25,7 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
+.flutter-plugins
 .packages
 pubspec.lock
 .pub-cache/
@@ -74,4 +75,3 @@ build/
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
 .metadata
-.fvm/**

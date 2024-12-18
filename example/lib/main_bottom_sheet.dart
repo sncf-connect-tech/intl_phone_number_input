@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               inputBorder: OutlineInputBorder(),
               selectorConfig: SelectorConfig(
                 selectorType: PhoneInputSelectorType.BOTTOM_SHEET,
+                useBottomSheetSafeArea: true,
               ),
             ),
             ElevatedButton(
@@ -77,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
     controller.text = parsableNumber;
 
     setState(() {
-      initialCountry = number.isoCode!;
+      initialCountry = number.isoCode ?? '';
     });
   }
 

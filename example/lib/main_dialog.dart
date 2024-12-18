@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
     controller.text = parsableNumber;
 
     setState(() {
-      initialCountry = number.isoCode!;
+      initialCountry = number.isoCode ?? '';
     });
   }
 
